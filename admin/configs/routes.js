@@ -23,7 +23,7 @@ router.put('/api/v1/nations/:id', nationApis.updateNation);
 router.delete('/api/v1/nations/:id', nationApis.deleteNation);
 // carrers
 router.get('/admin/carrers', carrers.home);
-router.get('/admin/distritos', requireAuth, distritos.home);
-router.get('/admin/districts', requireAuth, distritos.home);
+router.get('/admin/distritos', distritos.home);
+router.get('/admin/districts', distritos.home);
 
 export default router;
