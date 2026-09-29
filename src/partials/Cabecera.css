@@ -1,0 +1,21 @@
+.navbar {
+	padding-block: 0.75rem;
+	box-shadow: 0 2px 8px rgb(0 0 0 / 18%);
+}
+
+.navbar .navbar-brand {
+	font-size: 1.25rem;
+}
+
+.navbar .nav-link {
+	transition: color 160ms ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+	color: #ffffff;
+}
+
+.navbar .btn-primary {
+	padding-inline: 1.25rem;
+}

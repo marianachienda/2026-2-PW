@@ -22,6 +22,7 @@ export default defineConfig(({ mode }) => {
         input: {
           'web': resolve(__dirname, 'src/entries/web.jsx'),
           'admin': resolve(__dirname, 'src/entries/admin.jsx'),
+          'owner': resolve(__dirname, 'src/entries/owner.jsx'), //es como nuestra clase main de una subaplicación de react
         },
         output: {
           entryFileNames: `js/[name]${minSuffix}.js`,

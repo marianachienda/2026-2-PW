@@ -3,6 +3,8 @@ import { Router } from 'express';
 import * as admins from '../controllers/admin_controllers.js';
 import * as carrers from '../controllers/carrer_controllers.js';
 import * as distritos from '../controllers/district_controllers.js';
+import * as owner from '../controllers/owner_controllers.js';
+
 import * as nationApis from '../apis/nations_apis.js';
 import { redirectIfAuthenticated, requireAuth } from '../../configs/middlewares.js'; 
 
@@ -25,5 +27,6 @@ router.delete('/api/v1/nations/:id', nationApis.deleteNation);
 router.get('/admin/carrers', carrers.home);
 router.get('/admin/distritos', distritos.home);
 router.get('/admin/districts', distritos.home);
+router.get('/owner', owner.home);
 
 export default router;
